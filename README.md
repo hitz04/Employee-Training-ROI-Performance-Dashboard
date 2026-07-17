@@ -73,3 +73,5 @@ Loyalty score and regional breakdowns support targeted retention and expansion s
 Tools & Techniques
 
 Power BI · DAX · Data Modeling · Interactive Slicers/Filters · Smart Narratives
+
+![dashboard](https://github.com/hitz04/Sales-Performance-Dashboard-/blob/main/Snapshot%20of%20dashboard%20.png)
