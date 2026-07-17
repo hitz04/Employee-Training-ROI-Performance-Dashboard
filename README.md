@@ -1,16 +1,16 @@
-Sales Performance Dashboard – Power BI
+# Sales Performance Dashboard – Power BI
 
-Overview
+## Overview
 
 An interactive Power BI dashboard built to turn raw transactional sales data into self-service analytics. It consolidates customer, product, and regional performance data into a single view, enabling faster, data-driven decision-making across teams.
 
-Business Objective
+## Business Objective
 
 Provide a single source of truth for sales performance — helping stakeholders identify top-performing products, underperforming regions, low-stock risks, and customer loyalty trends without relying on manual reporting.
 
 Data Model
 
-Built on a relational data model with the following tables:
+## Built on a relational data model with the following tables:
 
 
 Sales – transactional-level sales records
@@ -20,7 +20,7 @@ RegionalTargets – target vs. achieved amounts by region
 Main – core measures table (DAX calculations)
 
 
-Key Measures (DAX)
+## Key Measures (DAX)
 
 
 Total Sales Amount
@@ -30,9 +30,9 @@ Total Order Quantity
 Achieved Amount vs. Target Amount
 
 
-Dashboard Sections
+## Dashboard Sections
 
-1. Final Assessment (Executive Summary)
+1. Sales Dashboard
 
 
 KPI cards: Total Customers, Total Sales Amount, Average Order Quantity, Total Order Quantity
@@ -62,7 +62,7 @@ Monthly Target Trends: Achieved vs. Target Amount over time
 Targeted vs. Achieved Amount by Region
 
 
-Key Insights
+## Key Insights
 
 
 All 4 regions beat sales targets by 11–15%
