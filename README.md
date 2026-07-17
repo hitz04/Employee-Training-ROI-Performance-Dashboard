@@ -1,53 +1,75 @@
-# Employee-Training-ROI-Performance-Dashboard
-Training ROI & Performance Analysis Dashboard (Power BI)
+Sales Performance Dashboard – Power BI
 
 Overview
 
-This Power BI dashboard analyzes employee training investment, effectiveness, and performance outcomes across departments. It combines financial ROI metrics with qualitative training data to help HR and L&D teams identify which training types and departments generate the strongest returns.
+An interactive Power BI dashboard built to turn raw transactional sales data into self-service analytics. It consolidates customer, product, and regional performance data into a single view, enabling faster, data-driven decision-making across teams.
 
-Dashboard Pages / Visuals
+Business Objective
 
-1. Average of Training ROI by Department
+Provide a single source of truth for sales performance — helping stakeholders identify top-performing products, underperforming regions, low-stock risks, and customer loyalty trends without relying on manual reporting.
 
-A horizontal bar chart comparing average training ROI across Research & Development, Human Resources, and Sales. R&D shows the highest ROI, indicating training spend there yields the best returns.
+Data Model
 
-2. Average of Training ROI by Training Type
-
-Breaks down ROI by training delivery method — Mentorship, On the Job, and Outsourced Vendor — to highlight which training format is most cost-effective.
-
-3. Average of Performance Rating by Department
-
-Compares average employee performance ratings across departments, allowing correlation checks against ROI figures.
-
-4. Employee-Level Table (Training Type & Performance Rating)
-
-A detailed drill-down table listing individual Employee IDs, the training type(s) they received, and their corresponding performance rating, supporting root-cause analysis at the individual level.
-
-5. Count of Employee ID by Job Role
-
-A pie chart showing the distribution of employees across job roles (Sales Executive, Research Scientist, Laboratory Technician, Manufacturing, Healthcare Representative, Manager, Sales Representative, Research Director, Human Resources, Area Sales Manager, etc.), giving a headcount/composition view of the workforce.
-
-6. Sum of Average Training Duration vs. New Client Acquisition vs. Performance (Scatter Plot)
-
-A bubble chart plotting training duration (x-axis) against new client acquisition post-training (y-axis), with bubble size/color representing department and performance impact — used to evaluate whether longer training correlates with better business outcomes.
-
-Filters / Slicer Panel
-
-A slicer on the right allows filtering the entire dashboard by Department, Age, and Training Type for focused analysis.
-
-Key Insights Enabled
+Built on a relational data model with the following tables:
 
 
-Identify which department gets the best ROI from training spend
-Compare effectiveness of mentorship vs. on-the-job vs. outsourced training
-Track individual employee training history against performance outcomes
-Assess workforce composition by job role
-Evaluate whether training duration impacts client acquisition and performance
+Sales – transactional-level sales records
+Customers – customer details and regional mapping
+Products – product/category master data and stock status
+RegionalTargets – target vs. achieved amounts by region
+Main – core measures table (DAX calculations)
 
 
-Tech Stack
+Key Measures (DAX)
 
 
-Tool: Microsoft Power BI Desktop
-Data Model: Employee-level fact table with Department, Training Type, Job Role, Performance Rating, Training Duration, and New Client Acquisition metrics
-![Dashboard Preview](https://github.com/hitz04/Employee-Training-ROI-Performance-Dashboard/blob/main/Snapshot%20of%20Dashboard.png)
+Total Sales Amount
+Total Customers
+Average Order Quantity
+Total Order Quantity
+Achieved Amount vs. Target Amount
+
+
+Dashboard Sections
+
+1. Final Assessment (Executive Summary)
+
+
+KPI cards: Total Customers, Total Sales Amount, Average Order Quantity, Total Order Quantity
+Sales Trend line chart across the reporting period
+Slicers: Category, Sale Date (range), Customer Region
+
+
+2. Product Performance
+
+
+Category-wise Sales (bar chart and pie chart)
+Stock Status Summary (High / Medium / Low) to flag inventory risk
+
+
+3. Customer Insights
+
+
+New vs. Returning Customers (gauge)
+Customer Count by Region
+Loyalty Score Distribution (histogram)
+
+
+4. Regional Performance
+
+
+Monthly Target Trends: Achieved vs. Target Amount over time
+Targeted vs. Achieved Amount by Region
+
+
+Key Insights
+
+
+All 4 regions beat sales targets by 11–15%
+51% of SKUs flagged as low stock, surfacing a supply-risk signal for procurement
+Loyalty score and regional breakdowns support targeted retention and expansion strategies
+
+
+Tools & Techniques
+
+Power BI · DAX · Data Modeling · Interactive Slicers/Filters · Smart Narratives
